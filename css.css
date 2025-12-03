@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f7fb;
+    font-family: Arial;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#ust {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#oyun {
+    text-align: center;
+    background-color: #f6f7fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: calc(100vh - 50px);
+}
+
+#game-board-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#game-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 12px;
+    max-width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card {
+    width: calc(25% - 20px);
+    flex-grow: 1;
+    background-color: #fffffff3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 32px 0 #282e3e14;
+    border-radius: 16px;
+    box-sizing: border-box;
+    margin: 1px;
+    color: #282e3e;
+    border: 3px solid #d9dde8;
+    transition: all 0.02s ease;
+}
+
+.card:hover {
+    background-color: #edf5faf3;
+}
+
+@media (max-width: 800px) {
+    .card {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+.card.matched {
+    visibility: hidden;
+}
+
+.card.wrong {
+    background-color: #fffffd !important;
+    border: 3px solid #f1c40f !important;
+}
+
+.card.selected {
+    border: 2px solid #00f;
+}
+
+#timer {
+    padding: 12px;
+    font-weight: bold;
+}
+
+#acilis {
+    width: 50vw;
+    margin-left: 25%;
+    position: relative;
+    top: calc(50vh - 100px);
+    height: min-content;
+    text-align: center;
+    color: #282e3e;
+}
+
+#ac {
+    position: absolute;
+    top: calc(50% + 64px);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    left: 50%;
+    width: fit-content;
+}
+
+#st {
+    font-weight: bold;
+    padding: 1.135rem 1.885rem;
+    background: #4255ff;
+    color: #fff;
+    align-items: center;
+    border: .125rem solid #0000;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    transition: all .12s cubic-bezier(.47,0,.745,.715);
+    width: 100%;
+    font-size: 1rem;
+}
+
+#resetnow {
+    padding: 1.135rem 1.885rem;
+    background: white;
+    color: #586380;
+    align-items: center;
+    border: .125rem solid #d9dde8;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    transition: all .12s cubic-bezier(.47,0,.745,.715);
+    font-size: 1rem;
+    top: 10px;
+    right: 10px;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.2s ease-in-out;
+}
+#options-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    overflow: hidden;
+}
+
+#options-menu h3 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+#options-menu p {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#options-menu button {
+    padding: 10px 20px;
+    background: #4255ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+#options-menu button:hover {
+    background: #3243cc;
+}
+
+.true {
+    background-color: #eefcef!important;
+    border-color: #07bc0c!important;
+}

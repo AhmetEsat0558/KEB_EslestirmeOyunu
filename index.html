@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script src="cards.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js.js"></script>
+    <script>
+    function hazirlik() {
+        document.getElementById("timer").innerHTML = gamename;
+        document.title = gamename;
+    }
+    if (window.Event) // Only Netscape will have the CAPITAL E.
+  document.captureEvents(Event.MOUSEUP); // catch the mouse up event
+function nocontextmenu()  // this function only applies to IE4, ignored otherwise.
+{
+    event.cancelBubble = true
+    event.returnValue = false;
+    return false;
+}
+function norightclick(e)    // This function is used by all others
+{
+    if (window.Event)   // again, IE or NAV?
+    {
+        if (e.which == 2 || e.which == 3)
+            return false;
+    }
+    else
+        if (event.button == 2 || event.button == 3)
+        {
+            event.cancelBubble = true
+            event.returnValue = false;
+            return false;
+        }
+}
+document.oncontextmenu = nocontextmenu;     // for IE5+
+document.onmousedown = norightclick;        // for all others
+    </script>
+</head>
+<body onload="hazirlik();">
+    <div id="ust">
+        <button id="resetnow" onclick="toggleOptionsMenu();">Seçenekler</button>
+        <div id="timer" style="top: 10px"></div>
+    </div>
+    <div id="oyun" style="display: none;">
+        <div id="game-board-container">
+            <div id="game-board"></div>
+        </div>
+    </div>
+    <div id="acilis">
+        <div id="ac">
+            <h2 id="tz">Oynamaya hazır mısın?</h2>
+            <h3 id="tzx"></h3>
+            <p style="font-size: 1rem;font-weight: 400;line-height: 1.5;">Elementleri sembolleriyle mümkün olan en kısa sürede eşleştirmelisin. Eşleştirmeyi yanlış yaparsan süre uzar!</p>
+            <center>
+                <br>
+                <button id="st" onclick="startGame();">Oyunu Başlat</button>
+            </center>
+        </div>
+    </div>
+    <div id="options-menu" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: white; padding: 20px; z-index: 1000; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); transform: translateY(-100%); transition: transform 0.5s ease;">
+        <center>
+        <h3>Seçenekler</h3>
+        <button onclick="toggleOptionsMenu();">Kapat</button>
+        <br>
+        <button onclick="startGame();toggleOptionsMenu();">Yeniden Başlat</button>
+        <br>
+        <button onclick="toggleFullScreen();">Tam Ekran</button>
+        <br>
+        <button onclick="toggleSound();"><span id="sound-status">Sesi Kapat</span></button>
+    </center>
+    </div>
+    
+</body>
+
+</html>
