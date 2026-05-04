@@ -125,7 +125,7 @@ function createBoard() {
         // You can also show the image
 
         var img = document.createElement('img');
-        if(card.image !== '') {
+        if(card.image) {
         img.src = 'images/' + card.image + ".png"; // Assuming images are stored in the 'images' folder
         img.style.display = ''; // Initially hide the image
         }else {
