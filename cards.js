@@ -1,6 +1,7 @@
 var gamename = "ELEMENTLER OYUNU";
 var visible_image = false;
 var cards = [
+    // İlk 20 element
     { word: 'Hidrojen', meaning: 'H', image: '1'},
     { word: 'Helyum', meaning: 'He', image: '2' },
     { word: 'Lityum', meaning: 'Li', image: '3' },
@@ -21,12 +22,28 @@ var cards = [
     { word: 'Argon', meaning: 'Ar', image: '18' },
     { word: 'Potasyum', meaning: 'K', image: '19' },
     { word: 'Kalsiyum', meaning: 'Ca', image: '20' },
-    
+
+    //Sık kullanılan elementler
     { word: 'Demir', meaning: 'Fe', image: '21' },
     { word: 'Bakır', meaning: 'Cu', image: '22' },
     { word: 'Çinko', meaning: 'Zn', image: '23' },
     { word: 'İyot', meaning: 'I', image: '24' },
     { word: 'Altın', meaning: 'Au', image: '25' },
     { word: 'Gümüş', meaning: 'Ag', image: '26' },
-    { word: 'Cıva', meaning: 'Hg', image: '27' }
+    { word: 'Cıva', meaning: 'Hg', image: '27' },
+
+    //Sık kullanılan bileşikler
+    { word: 'Su', meaning: 'H2O', image: null },
+    { word: 'Sodyum klorür', meaning: 'NaCl', image: null },
+    { word: 'Karbondioksit', meaning: 'CO2', image: null },
+    { word: 'Karbonmonoksit', meaning: 'CO', image: null },
+    { word: 'Amonyak', meaning: 'NH3', image: null },
+    { word: 'Metan', meaning: 'CH4', image: null },
+    { word: 'Hidroklorik asit', meaning: 'HCl', image: null },
+    { word: 'Sülfürik asit', meaning: 'H2SO4', image: null },
+    { word: 'Nitrik asit', meaning: 'HNO3', image: null },
+    { word: 'Sodyum hidroksit', meaning: 'NaOH', image: null },
+    { word: 'Kalsiyum karbonat', meaning: 'CaCO3', image: null },
+    { word: 'Sodyum bikarbonat', meaning: 'NaHCO3', image: null },
+    
 ];
