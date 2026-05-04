@@ -33,17 +33,17 @@ var cards = [
     { word: 'Cıva', meaning: 'Hg', image: '27' },
 
     //Sık kullanılan bileşikler
-    { word: 'Su', meaning: 'H2O', image: null },
-    { word: 'Sodyum klorür', meaning: 'NaCl', image: null },
-    { word: 'Karbondioksit', meaning: 'CO2', image: null },
-    { word: 'Karbonmonoksit', meaning: 'CO', image: null },
-    { word: 'Amonyak', meaning: 'NH3', image: null },
-    { word: 'Metan', meaning: 'CH4', image: null },
-    { word: 'Hidroklorik asit', meaning: 'HCl', image: null },
-    { word: 'Sülfürik asit', meaning: 'H2SO4', image: null },
-    { word: 'Nitrik asit', meaning: 'HNO3', image: null },
-    { word: 'Sodyum hidroksit', meaning: 'NaOH', image: null },
-    { word: 'Kalsiyum karbonat', meaning: 'CaCO3', image: null },
-    { word: 'Sodyum bikarbonat', meaning: 'NaHCO3', image: null },
+    { word: 'Su', meaning: 'H2O', image: '' },
+    { word: 'Sodyum klorür', meaning: 'NaCl', image: '' },
+    { word: 'Karbondioksit', meaning: 'CO2', image: '' },
+    { word: 'Karbonmonoksit', meaning: 'CO', image: '' },
+    { word: 'Amonyak', meaning: 'NH3', image: '' },
+    { word: 'Metan', meaning: 'CH4', image: '' },
+    { word: 'Hidroklorik asit', meaning: 'HCl', image: '' },
+    { word: 'Sülfürik asit', meaning: 'H2SO4', image: '' },
+    { word: 'Nitrik asit', meaning: 'HNO3', image: '' },
+    { word: 'Sodyum hidroksit', meaning: 'NaOH', image: '' },
+    { word: 'Kalsiyum karbonat', meaning: 'CaCO3', image: '' },
+    { word: 'Sodyum bikarbonat', meaning: 'NaHCO3', image: '' }
     
 ];
