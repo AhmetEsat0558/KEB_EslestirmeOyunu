@@ -111,7 +111,9 @@ function createBoard() {
         cardElement.className = 'card';
         cardElement.dataset.type = card.type;
         cardElement.dataset.content = card.content;
-        cardElement.dataset.image = card.image;
+if (card.image) {
+    cardElement.dataset.image = card.image;
+}
 
         // Display either the word or the meaning on the card
 if (card.type === 'word') {
