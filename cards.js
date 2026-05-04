@@ -18,5 +18,15 @@ var cards = [
     { word: 'Fosfor', meaning: 'P', image: '15' },
     { word: 'Kükürt', meaning: 'S', image: '16' },
     { word: 'Klor', meaning: 'Cl', image: '17' },
-    { word: 'Argon', meaning: 'Ar', image: '18' }
+    { word: 'Argon', meaning: 'Ar', image: '18' },
+    { word: 'Potasyum', meaning: 'K', image: '19' },
+    { word: 'Kalsiyum', meaning: 'Ca', image: '20' },
+    
+    { word: 'Demir', meaning: 'Fe', image: '21' },
+    { word: 'Bakır', meaning: 'Cu', image: '22' },
+    { word: 'Çinko', meaning: 'Zn', image: '23' },
+    { word: 'İyot', meaning: 'I', image: '24' },
+    { word: 'Altın', meaning: 'Au', image: '25' },
+    { word: 'Gümüş', meaning: 'Ag', image: '26' },
+    { word: 'Cıva', meaning: 'Hg', image: '27' }
 ];
