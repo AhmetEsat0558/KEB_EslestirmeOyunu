@@ -111,20 +111,16 @@ function createBoard() {
         cardElement.className = 'card';
         cardElement.dataset.type = card.type;
         cardElement.dataset.content = card.content;
-if (card.image) {
-    cardElement.dataset.image = card.image;
-}
+        cardElement.dataset.image = card.image;
 
         // Display either the word or the meaning on the card
-if (card.type === 'word') {
-    cardElement.innerHTML = card.content;
-} else if (card.type === 'meaning') {
-    if (visible_image === true && card.image) {
-        cardElement.innerHTML = `<img src="images/${card.image}.png">`;
-    } else {
-        cardElement.innerHTML = card.content;
-    }
-}
+        if (card.type === 'word') {
+            cardElement.innerHTML = card.content; // Display the word
+        } else if (card.type === 'meaning') {
+            if (visible_image == true){
+            cardElement.innerHTML = card.content; // Display the meaning
+            }
+        }
 
         // You can also show the image
 
