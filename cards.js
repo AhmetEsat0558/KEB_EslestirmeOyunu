@@ -1,4 +1,4 @@
-var gamename = "Kimyasal Elementler ve Bileşikler Oyunu";
+var gamename = "Kimyasal Element ve Bileşikler Oyunu";
 var aciklama = "Elementleri sembolleriyle mümkün olan en kısa sürede eşleştirmelisin. Eşleştirmeyi yanlış yaparsan süre uzar!";
 var cards = [
     // İlk 20 element
